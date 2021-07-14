@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-const Layout = () => import('../views/Layout/Layout')
-const Login = () => import('../views/Login/Login')
-const Home = () => import('@/views/Layout/Home/Home')
-const User = () => import('@/views/Layout/User/User')
-const Search = () => import('@/views/Search/Search')
-const SearchResult = () => import('@/views/SearchResult/SearchResult')
-const Article = () => import('@/views/Article/Article')
-const store = () => import('@/store/store')
-const UserProfile = () => import('@/views/Layout/UserProfile/UserProfile')
-const Chat = () => import('@/views/Layout/User/Chat/Chat')
+import store from '@/store/store'
+
+const Layout = () => import('../views/Layout/Layout.vue')
+const Login = () => import('../views/Login/Login.vue')
+const Home = () => import('@/views/Layout/Home/Home.vue')
+const User = () => import('@/views/Layout/User/User.vue')
+const Search = () => import('@/views/Search/Search.vue')
+const SearchResult = () => import('@/views/SearchResult/SearchResult.vue')
+const Article = () => import('@/views/Article/Article.vue')
+const UserProfile = () => import('@/views/Layout/UserProfile/UserProfile.vue')
+const Chat = () => import('@/views/Layout/User/Chat/Chat.vue')
 
 Vue.use(VueRouter)
 
